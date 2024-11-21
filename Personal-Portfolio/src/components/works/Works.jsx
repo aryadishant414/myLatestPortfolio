@@ -23,6 +23,8 @@ export default function Works() {
         "Built a dynamic movie app using React, featuring movie browsing, search, and detailed information for an enhanced user experience.",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      gitLink: 'https://github.com/aryadishant414/movieApp2024',
+      liveDemo: '/',
     },
     // {
     //   id: "3",
