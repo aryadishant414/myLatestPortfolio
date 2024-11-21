@@ -7,35 +7,37 @@ export default function Works() {
     {
       id: "1",
       icon: "./assets/mobile.png",
-      title: "Web Design",
+      title: "Shopping Website",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "Developed a full-featured e-commerce website with functionalities similar to Flipkart, enabling seamless shopping, product browsing, and secure transactions.",
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      gitLink: 'https://github.com/aryadishant414/MERN_FLIPKART_2024',
+      liveDemo: '/',
     },
     {
       id: "2",
       icon: "./assets/globe.png",
-      title: "Mobile Application",
+      title: "Movie Application",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Built a dynamic movie app using React, featuring movie browsing, search, and detailed information for an enhanced user experience.",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
     },
-    {
-      id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
+    // {
+    //   id: "3",
+    //   icon: "./assets/writing.png",
+    //   title: "Branding",
+    //   desc:
+    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    //   img:
+    //     "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+    // },
   ];
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 1)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
   
@@ -55,7 +57,8 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <a href={`${d.gitLink}`}><span>See Code on Githhub</span></a>
+                  <a href={`${d.liveDemo}`}><span>View Live Demo</span></a>
                 </div>
               </div>
               <div className="right">
