@@ -45,6 +45,15 @@
       align-items: center;
       justify-content: center;
 
+      @include mobile {
+        // height: 50px;
+        // padding: 150px 10px;
+        // overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+      }
+
       .item {
         width: 700px;
         height: 100%;
@@ -74,6 +83,12 @@
             flex-direction: column;
             justify-content: space-between;
 
+            @include mobile {
+              overflow: hidden;
+              // padding: 30px 0px;
+              padding-top: 5px;
+            }
+
             .imgContainer {
               width: 40px;
               height: 40px;
@@ -93,6 +108,7 @@
 
                 @include mobile {
                   width: 15px;
+                  overflow: hidden;
                 }
               }
             }
@@ -101,6 +117,7 @@
 
               @include mobile{
                 font-size: 13px;
+                padding-bottom: 5px;
               }
             }
             p {
@@ -128,6 +145,10 @@
           img {
             width: 400px;
             transform: rotate(-10deg);
+
+            @include mobile {
+              width: 100px; //hereeeeeeee
+            }
           }
         }
       }
